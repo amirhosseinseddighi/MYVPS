@@ -24,7 +24,7 @@ jobs:
     - name: Download Important Files.
       run: |
         Invoke-WebRequest https://raw.githubusercontent.com/amirhosseinseddighi/MYVPS/main/amir-mola/Files/NGROK-US.bat -OutFile NGROK-US.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/amirhosseinseddighi/MYVPS/main/amir-mola/Files/NGROK-CHECK.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/amirhosseinseddighi/MYVPS/main/amir-mola/Files/NGROK-CHECK.bat -OutFile NGROK-CHECK.bat
         Invoke-WebRequest https://raw.githubusercontent.com/amirhosseinseddighi/MYVPS/main/amir-mola/Files/loop.bat -OutFile loop.bat
     - name: Make YML file for NGROK.
       run: start NGROK-US.bat
